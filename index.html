@@ -121,7 +121,20 @@
             SUCCESS_IMAGE_URL: "./success.gif", // 例如 "https://example.com/success.gif"
             // 3. 表白成功文字
             SUCCESS_TEXT: "我们被踹了！❤️"
+
+            // ✨ 新增按钮颜色配置（任意格式颜色值）
+            BUTTON_NO_COLOR: "#808080",      // 不愿意按钮背景色（默认灰）
+            BUTTON_YES_COLOR: "#ff0000",     // 愿意按钮背景色（默认红）
+            BUTTON_TEXT_COLOR: "#ffffff"     // 按钮文字颜色（默认白）
         };
+
+        // 设置按钮颜色
+        document.getElementById('btn-no').style.backgroundColor = CONFIG.BUTTON_NO_COLOR;
+        document.getElementById('btn-yes').style.backgroundColor = CONFIG.BUTTON_YES_COLOR;
+        
+        // 可选：设置按钮文字颜色
+        document.getElementById('btn-no').style.color = CONFIG.BUTTON_TEXT_COLOR;
+        document.getElementById('btn-yes').style.color = CONFIG.BUTTON_TEXT_COLOR;
 
         // 设置背景图片
         if (CONFIG.BG_IMAGE_URL) {
@@ -179,3 +192,4 @@
 </body>
 
 </html>
+
